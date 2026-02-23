@@ -1,6 +1,12 @@
 imports:
     - { resource: config.yml }
 
+framework:
+    debug: true
+
+twig:
+    debug: true
+
 #framework:
 #    validation:
 #        cache: validator.mapping.cache.apc
