@@ -710,7 +710,13 @@ class Template
 
         $css[] = api_get_cdn_path(api_get_path(WEB_CSS_PATH).$this->themeDir.'default.css');
         $css[] = api_get_cdn_path(ChamiloApi::getEditorBlockStylePath());
-
+        
+        // Load custom CSS file untuk override warna navbar dan elemen lainnya
+        $customCssFile = api_get_path(SYS_PATH).'main/inc/custom.css';
+        if (is_file($customCssFile)) {
+            $css[] = api_get_path(WEB_PATH).'main/inc/custom.css';
+        }
+                    
         $css_file_to_string = null;
         foreach ($css as $file) {
             $css_file_to_string .= api_get_css($file);
