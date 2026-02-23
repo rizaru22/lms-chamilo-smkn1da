@@ -1,0 +1,25 @@
+/* Header & Navbar */
+.navbar, .menu {
+    background: linear-gradient(135deg, #d9fd0d, #198754);
+}
+
+/* Tombol utama */
+.btn-primary, .btn-success {
+    background-color: #d9fd0d;
+    color: #000;
+}
+
+/* Link */
+a {
+    color: #198754;
+}
+
+/* Background halaman */
+body {
+    background-color: #f5f5f5;
+}
+
+/* Card / Box */
+.card, .panel {
+    border-color: #198754;
+}

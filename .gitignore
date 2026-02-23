@@ -8,14 +8,7 @@ app/logs/*
 !app/logs/.gitkeep
 
 # Chamilo configuration
-/app/config/parameters.yml
-/app/config/add_course.conf.php
-/app/config/auth.conf.php
-/app/config/course_info.conf.php
-/app/config/events.conf.php
-/app/config/mail.conf.php
-/app/config/profile.conf.php
-/app/config/configuration.php
+
 
 # Courses
 app/courses/*
@@ -49,7 +42,7 @@ main/cron/incoming/*
 plugin/vchamilo/templates/*
 
 # Stuff updated through composer - Remove just before release
-/vendor
-web/
+
+
 node_modules
 yarn.lock
